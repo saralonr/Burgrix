@@ -24,7 +24,11 @@ Fast food zinciri yönetimi üzerine hicivli bir strateji oyunu (HTML5 Canvas, T
 | `npm run build` | Tür denetimi ve üretim derlemesi (`dist/`, statik dosyalar) |
 | `npm test` | Kural ve arayüz testleri |
 
-Derlenen `dist/` klasörü statiktir; herhangi bir web sunucusunda ya da statik barındırmada (ör. GitHub Pages) çalışır.
+Derlenen `dist/` klasörü statiktir; herhangi bir web sunucusunda ya da statik barındırmada çalışır.
+
+## Yayın (GitHub Pages)
+
+`main` dalına her push'ta `.github/workflows/pages.yml` testleri çalıştırır, oyunu derler ve GitHub Pages'te yayınlar. İlk seferde repoda **Settings → Pages → Source: GitHub Actions** seçilmelidir. Oyun `https://<kullanıcı>.github.io/<repo>/` adresinde açılır; İngilizce için sona `?lang=en` eklenir.
 
 ## İçeriği değiştirmek
 

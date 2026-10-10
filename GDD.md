@@ -65,7 +65,7 @@ Her şey kodla, `src/ui/draw.ts` kitiyle çizilir; dışarıdan resim dosyası y
 
 ## 7. Yayın ve güvenlik
 
-- `npm run build` çıktısı (`dist/`) tamamen statiktir ve göreli yollar kullanır; herhangi bir web sunucusunda ya da statik barındırmada çalışır.
+- `npm run build` çıktısı (`dist/`) tamamen statiktir ve göreli yollar kullanır; herhangi bir web sunucusunda ya da statik barındırmada çalışır. `main` dalına her push'ta `.github/workflows/pages.yml` test edip derler ve GitHub Pages'te yayınlar.
 - Oyun başka bir sunucuya bağlanmaz: betik, yazı tipi, metin ve ses tarifleri aynı kaynaktan yüklenir. `index.html` içindeki Content-Security-Policy yalnız aynı kaynağa izin verir; dinamik kod (`eval`, `new Function`) ve HTML enjeksiyonu (`innerHTML`) kullanılmaz (test kontrol eder).
 - Dil: `?lang=tr|en`, yoksa tarayıcı dili, yoksa Türkçe; yalnız bu iki değer kabul edilir.
 - Tarayıcıda yalnız iki küçük değer saklanır: ses düzeyi (`burgrix.volume`) ve en uzun süre (`burgrix.best`); kişisel veri toplanmaz.

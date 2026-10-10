@@ -1,0 +1,32 @@
+# dependencies and build output
+node_modules/
+dist/
+release/
+coverage/
+*.tsbuildinfo
+.vite/
+
+# logs and temporary files
+*.log
+npm-debug.log*
+*.tmp
+*.bak
+
+# local environment and secrets
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# editors, OS and local tool settings
+.vscode/
+.idea/
+.claude/
+CLAUDE.md
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# private source material: never published
+assets-src/
